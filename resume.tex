@@ -1,0 +1,175 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://dkanzariya.github.io/}{\Large Dharmesh Kanzariya}} & Email : \href{mailto:d.kanzariya@gmail.com}{d.kanzariya@gmail.com}\\
+  \href{https://dkanzariya.github.io/}{dkanzariya.github.io} & Mobile : +91 9909624688 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Technology in \textbf {Electronics and Communication}}{Nadiad, Gujarat}
+      {Dharmsinh Desai Institute of Technology;  GPA: 6.9/10.0}{Aug. 2017 -- May. 2021}
+    \resumeSubheading
+      {12th science GSHEB}{Rajkot, Gujarat}
+      {Lal Bahadur Shastri Vidhyalaya;  Percentage: 73\%}{June. 2015 -- May. 2017}
+    \resumeSubheading
+      {10th Board GSEB}{Rajkot, Gujarat}
+      {Shree Gyandeep Vidhyalaya;  Percentage: 77\%}{may 2014 -- May. 2015}  
+  \resumeSubHeadingListEnd
+
+
+%-----------Projects-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Machine learning in Communication}{}
+      {Working with Prof. Hetal B. Shah-an assistant professor,EC dep. at DDIT.}{}
+     
+      \resumeItemListStart
+        \resumeItem{Nonorthogonal Multiple Access Scheme}
+          {we build, train and test the proposed NOMA Scheme to realize automatic encoding, decoding and channel detection.}
+          \resumeItem{Deep Learning for NOMA MIMO}
+          {We approximate and evaluate the data detection capacity of DL based on NOMA. Simulation results demonstrate that the proposed scheme is robust and efficient compared with conventional approaches.}
+
+      \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Embbeded-Deep-Learning}{}
+      {Object Classiﬁcation On raspbarry Pi using Tensorﬂow lite.}{}
+      \resumeItemListStart
+        \resumeItem{CNN for computer vision}
+          {we apply supervised learning techniques on convolutional neural networks (CNN) to classify Human at run time. Neural Network comes at the cost of high computational complexity. We implement CNN in low power device using tflite. We train a model for human classification Using transfer learning.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Tic-tac-toe}{}
+      {3x3 tic-tac-toe game without CPU}{}
+      \resumeItemListStart
+        \resumeItem{Simulation}
+          {not two player: human versus the board, board makes optimal moves.}
+        \resumeItem{On board}
+          {The game is designed so that two players can play tic-tac-toe using a simple digital circuit. The board will contain a led and a push button to place the symbol as well as toggle between the symbols allowing each player a turn to play the game. The board will update after each player makes their move and check for the conditions of wining as it goes on.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%------------CERTIFICATIONs----------------
+\section{Certifications}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Machine Learning}
+      {by Stanford University on Coursera.}
+    \resumeSubItem{Introduction to TensorFlow for AI, ML, and DL}
+      {by deeplearning.ai on Coursera.}
+
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+     \resumeSubItem{Languages}
+      {: Python, C, C++}
+    \resumeSubItem{Framework/tools}
+      {:Tensorflow, Pytorch, Matlab, Keil, \LaTeX}
+
+    
+  \resumeSubHeadingListEnd
+%--------INTEREST------------
+\section{Interests}
+  \resumeSubHeadingListStart
+
+    \resumeSubItem{\normalfont Artificial Intelligence}{}
+    \resumeSubItem{\normalfont Reading (non-fiction books)}{}
+        
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
